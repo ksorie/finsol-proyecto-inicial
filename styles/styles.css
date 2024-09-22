@@ -1,18 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root{
-    --colorPrimario: #0a3674;
-    --colorSecundario: #ffffff;
-    --colorTerciario: #363535;
-    --colorCuaternario: #05060f0a;
-    --colorQuinto: #c00f15;
-}
-
-*{
-    font-family: "Montserrat" ;
-    background-color:transparent ;
-    
-}
 
 body{
     margin: 0;
@@ -33,33 +18,12 @@ main{
     background-size: cover;
     
 }
-.headerMenu{
-    background-color: var(--colorPrimario);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 2% 0% 2% 15%;
-    gap: 22px;
 
-}
-
-.menu{
-    background-color: var(--colorPrimario);
-    display: flex;
-    justify-items: center;
-    gap: 80px;
-
-}
-
-.menuPrincipal{
-    color: var(--colorSecundario);
-    text-decoration:none;
-    font-size: 20px;
-}
-.textoBanca{
-top: 0%;
-color: var(--colorSecundario);
-font-size: 24px;
+form{
+    width: 100%;
+    margin: 0;
+    display: grid;
+    gap: 16px;
 }
 
 .logoContainer{
@@ -87,14 +51,9 @@ font-size: 24px;
         background: var(--colorSecundario);
         box-shadow: var(--colorTerciario);
         margin-top: 1%;
-      }
 
-/*.card h2{
-    font-size: 24px;
-    font-weight: 800;
-    margin: 0 0 12px;
-    text-align: center;
-}*/
+}
+
 
 .card h3{
     color: var(--colorPrimario);
@@ -104,12 +63,7 @@ font-size: 24px;
     text-align: center;
 }
 
-form{
-    width: 100%;
-    margin: 0;
-    display: grid;
-    gap: 16px;
-}
+
 
 .input {
     max-width: 100%;
@@ -183,13 +137,15 @@ row-gap: 10px;
 
 /*---INICIO DE FOOTER*/
 .footer {
+        background-color: var(--colorPrimario); 
+    color: var(--colorSecundario);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    background-color: var(--colorPrimario); 
-    color: var(--colorSecundario);
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+
 }
 
 .social{
@@ -362,6 +318,7 @@ row-gap: 10px;
         flex-direction: column;
         width: 100%;
         margin: 0;
+       
     }
 
     .location{
