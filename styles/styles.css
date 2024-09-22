@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --colorPrimario: #0a3674;
+    --colorSecundario: #ffffff;
+    --colorTerciario: #363535;
+    --colorCuaternario: #05060f0a;
+    --colorQuinto: #c00f15;
+}
+
+*{
+    font-family: "Montserrat" ;
+    background-color:transparent ;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--colorPrimario);
+    background-size: cover;
+    
+}
+.headerMenu{
+    background-color: var(--colorPrimario);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2% 0% 2% 15%;
+    gap: 22px;
+
+}
+
+.menu{
+    background-color: var(--colorPrimario);
+    display: flex;
+    justify-items: center;
+    gap: 80px;
+
+}
+
+.menuPrincipal{
+    color: var(--colorSecundario);
+    text-decoration:none;
+    font-size: 20px;
+}
+.textoBanca{
+top: 0%;
+color: var(--colorSecundario);
+font-size: 24px;
+}
+
+.logoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cardLogo{
+    width: 50%;
+    height: auto;
+    margin-top: 0;
+    margin-left: 2%;
+    flex-shrink: 0;
+}
+
+
+.card {
+        width: 100%;
+        max-width: 400px;
+        padding: 40px;
+        border-radius: 40px;
+        background: var(--colorSecundario);
+        box-shadow: var(--colorTerciario);
+        margin-top: 1%;
+      }
+
+/*.card h2{
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 12px;
+    text-align: center;
+}*/
+
+.card h3{
+    color: var(--colorPrimario);
+    margin: 0 0 48px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+
+form{
+    width: 100%;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+}
+
+.input {
+    max-width: 100%;
+    height: 44px;
+    background-color: var(--colorCuaternario);
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s, background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.inputGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.label {
+    display: block;
+    margin-bottom: .3rem;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #05060f99;
+    transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.input:hover, .input:focus, .input-group:hover .input {
+    outline: none;
+    border-color: var(--colorTerciario);
+}
+
+.input-group:hover .label, .input:focus {
+    color: var(--colorCuaternario);
+}
+
+.btnIngresar{   
+    background-color:var(--colorQuinto);
+    color: var(--colorSecundario);
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 15px
+}
+
+.finalCard{
+display: flex;
+flex-direction: row;
+row-gap: 10px;
+
+}
+
+.span{
+    color: var(--colorPrimario);
+}
+
+
+.checkbox{
+    width: 20px;
+    align-items: center;
+}
+
+.finalCard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+/*---INICIO DE FOOTER*/
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: var(--colorPrimario); 
+    color: var(--colorSecundario);
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+
+.enlacesRedes{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    max-width: 20%;
+}
+
+.footerLocation {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
+}
+
+.imgLogo{
+    width: 30%;
+    margin:10px
+}
+
+
+
+.redes img{
+    flex-direction: row;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-regulatorios{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:0;
+
+}
+
+.img-regulatorios {
+    max-width: 100px; /* Limita el tamaño máximo de las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.figure{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.footerSocialMediaContainer{
+
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: center;
+
+}
+
+
+.enlacesRedes {
+    display: flex;
+    gap: 10px;
+}
+
+.footerSocialText{
+    white-space: nowrap; 
+}
+
+
+
+/* Responsive */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .card{
+        width: 60%;
+        max-width: 500px;
+        padding: 70px 50px 44px;
+    }
+
+    .card h2{
+        font-size: 36px;
+    }
+
+    .card h3{
+        font-size: 16px;
+    }
+
+    .btnIngresar{
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 767px){
+    *{
+        margin-top: 3%;
+    }
+    form{
+        width: 100%;
+        display: grid;
+        gap: 16px;
+        margin-right: 200px;
+        
+    }
+    .card{
+        width: 60%;
+        max-width: 500px;
+        padding: 70px 50px 44px;
+        align-content: center;
+
+    }
+
+    body{
+        background-color: var(--colorPrimario);
+        max-width: 100%;
+        overflow-x: hidden;  /* Evita el scroll horizontal */
+    }
+
+    .card h2{
+        font-size: 36px;
+    }
+
+    .card h3{
+        font-size: 16px;
+    }
+
+    .btnIngresar{
+        font-size: 18px;
+    }
+
+    .footer{
+        min-height: 100vh; /* Ajusta el contenedor para que no exceda el tamaño de la pantalla */
+    }
+    .footerLocation{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+}
+
+

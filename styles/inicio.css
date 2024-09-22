@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --colorPrimario: #1b4176;
+    --colorSecundario: #ffffff;
+    --colorTerciario: #ebebeb;
+    --colorCuaternario: #C00f15;
+    --colorQuinto: #fff;
+    --colorSexto:#6B7280;
+
+    /*Letras*/
+    --letraPrimaria:"Montserrat";
+
+}
+
+body{
+    background-color: var(--colorTerciario);
+    font-family: var(--letraPrimaria);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.headerMenu{
+    background-color: var(--colorPrimario);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2% 0% 2% 15%;
+    gap: 22px;
+
+}
+
+.menu{
+    background-color: var(--colorPrimario);
+    display: flex;
+    justify-items: center;
+    gap: 80px;
+
+}
+
+.menuPrincipal{
+    color: var(--colorSecundario);
+    text-decoration:none;
+    font-size: 20px;
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 90%;
+    padding: 4%;
+}
+.card,.card2, .card3{
+    max-width: 300px;
+    border-radius: 0.5rem;
+    background-color: var(--colorQuinto);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+}
+
+.card a, .card2 a, .card3 a  {
+    text-decoration: none
+}
+
+.contenido{
+    padding: 1.1rem;
+}
+
+.image {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    background-image: url(/img/Card1.png);
+}
+.image2{
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    background-image: url(/img/Card2.png);
+}
+
+.image3{
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    background-image: url(/img/Card3.png);
+}
+.tituloTarjeta {
+    color: var(--colorPrimario);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+
+.contenidoTexto {
+    margin-top: 0.5rem;
+    color:var(--colorSexto) ;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.leer {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: var(--colorSecundario);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: var(--colorCuaternario);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+  
+  .action span {
+    transition: .3s ease;
+  }
+  
+  .action:hover span {
+    transform: translateX(4px);
+  }
+  
