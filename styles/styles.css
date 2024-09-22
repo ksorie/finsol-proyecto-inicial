@@ -341,4 +341,59 @@ row-gap: 10px;
 
 }
 
+@media (max-width: 480px) {
 
+    form{
+        width: 100%;
+        display: grid;
+        gap: 16px;
+        margin-right: 100px;
+        
+    }
+    .card{
+        width: 60%;
+        max-width: 500px;
+        padding: 70px 50px 44px;
+
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .location{
+        display: none;
+    }
+
+    .footer-regulatorios{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .figure{
+        margin: 0 ;
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+    }
+    .figCaption{
+        font-size: 12px;
+    }
+    .img-regulatorios,.footer-social-media-icon {
+        width: 50%;
+
+    }
+    .footerSocialMediaContainer{    
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        font-size: 12px;
+        
+    }
+
+
+}
