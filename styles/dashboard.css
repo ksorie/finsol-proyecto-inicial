@@ -1,0 +1,55 @@
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    height: 100vh; /* 100% de la altura de la ventana */
+}
+
+/* Layout que contiene el sidebar y el contenido principal */
+.layout {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px; /* Ancho del sidebar */
+    background-color: var(--colorOctavo); /* Fondo del menú lateral */
+    color: var(--colorSeptimo);
+    padding: 20px;
+    height: 100vh; /* Que ocupe toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color:var(--colorSeptimo);
+    text-decoration: none;
+}
+.nav-item img {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    width: 23px;
+    height: 23px;
+}
+
+/* Contenido principal */
+.main-content {
+    flex: 1; /* Ocupa el espacio restante */
+    padding: 20px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+}
+
+/* Títulos */
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Préstamos</title>
+    <link rel="icon" href="/img/finsol.png.png">
+    <link rel="stylesheet" href="/styles/dashboard.css">
+    <link rel="stylesheet" href="/styles/general.css">
+    <link rel="stylesheet" href="/styles/prestamos.css">
+    
+</head>
+<body>
+        <div class="container">
+            <div class="layout">
+                <!-- Sidebar -->
+                <header class="sidebar">
+                    <div class="logo">
+                        <!--img src="/img/finsol.png.png" alt="Logo de finsol">-->
+                    </div>
+                    <nav class="nav" aria-label="Navegación principal">
+                        <ul>
+                            <li><a href="#" class="nav-item">
+                                <img class="icon-class-dashboard" src="/img/Recursos/IconsFigma/icons8-web-design-24-2.png"><!-- Reemplaza con tu icono -->
+                                Dashboard
+                                </a>
+                            </li>
+                            <li><a href="#" class="nav-item active">
+                                <img class="icon-class-loans" src="/img/Recursos/IconsFigma/icons8-préstamo-32.png"><!-- Reemplaza con tu icono -->
+                                Solicitud de Préstamos
+                                </a>
+                            </li>
+                            <li><a href="#" class="nav-item">
+                                <img class="icon-class-profile" src="/img/Recursos/IconsFigma/icons8-cliente-30.png"><!-- Reemplaza con tu icono -->
+                                Perfil
+                                </a>
+                            </li>
+                            <li><a href="#" class="nav-item">
+                                <img class="icon-class-segure" src="/img/Recursos/IconsFigma/icons8-seguro-24.png"><!-- Reemplaza con tu icono -->
+                                Solicitud de Seguros
+                                </a>
+                            </li>
+                            <li><a href="#" class="nav-item">
+                                <img class="icon-class-notifications" src="/img/Recursos/IconsFigma/icons8-notificación-24.png"><!-- Reemplaza con tu icono -->
+                                Notificaciones
+                                </a>
+                            </li>
+                            <li><a href="#" class="nav-item">
+                                <img class="icon-class-pay" src="/img/Recursos/IconsFigma/icons8-dinero-50-2.png" > <!-- Reemplaza con tu icono -->
+                                Pagos
+                                </a>
+                            </li>
+                            <li><a href="#" class="nav-item">
+                                <img class="icon-class-logout" src="/img/Recursos/IconsFigma/icons8-cerrar-sesión-48.png"><!-- Reemplaza con tu icono -->
+                                Cerrar Sesión
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                </header>
+            </div>
+        </div>
+                <!-- Main Content -->
+                <main class="main-content">
+                    <h2 class="title">Nueva Solicitud de Préstamo</h2>
+                    <form class="form">
+                        <div class="form-group">
+                            <label class="label">Monto solicitado</label>
+                            <input type="number" class="input" placeholder="L 0.00">
+                        </div>
+    
+                        <div class="form-group">
+                            <label class="label">Tipo de préstamo</label>
+                            <select class="select input">
+                                <option value="">Seleccione un tipo</option>
+                                <option value="personal">Préstamo Personal</option>
+                                <option value="business">Préstamo Empresarial</option>
+                                <option value="mortgage">Préstamo Hipotecario</option>
+                                <option value="student">Préstamo Estudiantil</option>
+                                <option value="cars">Préstamo Automótriz</option>
+                            </select>
+                        </div>
+    
+                        <div class="form-group">
+                            <label class="label ">Propósito del Préstamo</label>
+                            <textarea class="textarea input"></textarea>
+                        </div>
+                            <span class="note">
+                                <img src="/img/Recursos/IconsFigma/icons8-seguro-48.png" alt="icon de seguro">
+                                Incluye Seguro de Vida obligatorio por Cobertura de Deuda   
+                            </span>
+
+                        <div class="buttons">
+                            <button type="button" class="btn btn-cancel">Cancelar</button>
+                            <button type="submit" class="btn btn-submit">Enviar Solicitud</button>
+                        </div>
+                    </form>
+                </main>
+
+    
+
+</body>
+</html>

@@ -7,93 +7,45 @@
     <link rel="icon" href="/img/finsolLogo.png">
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/general.css">
+    <link rel="stylesheet" href="./styles/login.css">
 
 </head>
-<body>   
-        <!--header class="headerMenu">
-            <nav class="menu">
-                <a href="inicio.html" class="menuPrincipal">Inicio</a>
-                <a href="" class="menuPrincipal">¿Quienes Somos?</a>
-                <a href="" class="menuPrincipal">Productos y Servicios</a>
-                <a href="" class="menuPrincipal">Red de Agencias</a>
-                <a href="" class="menuPrincipal">Blog</a>
-                <a href="" class="menuPrincipal">Contactenos</a>
-                <a href="banca.htm" class="menuPrincipal">Banca en Línea</a>
-            </nav>
-            </!--header>
-
-        <div class="header">
-            <img class="headerLogo" src="/img/finsolLogo.png" alt="logoFinsol">
-            <p class="textoBanca"> Banca en Línea</p>
-        </div>
-    </header>-->
-    <main>
+<body>
+    <main class="main">
+        <!-- Sección de formulario -->
         <section class="card">
-            <div class="logoContainer">
-                <img class="cardLogo" title="logoDeFinsol" src="/img/finsolLogo.png">
+            <div class="form-card">
                 <h3>Ingrese sus datos</h3>
             </div>
             
-            <form class="form" action="">
-                <article class="inputGroup">
-                    <label class="label"></label>
-                    <input type="email" name="email" id="email" class="input" placeholder="Correo Electrónico">
-                    <label class="label"></label>
-                    <input type="password" name="Password" id="Password" class="input" placeholder="Contraseña">
-                    <input type="button" value="Ingresar" class="input btnIngresar">
+            <form class="form" action="" method="post">
+                <div class="inputGroup">
+                    <legend class="sr-only">Haz realidad tus sueños y proyectos </legend>
+                    <label for="email" class="label">Correo Electrónico</label>
+                    <input type="email" name="email" id="email" class="input" placeholder="" required>
                     
-                </article>
-                <article class="finalCard">
-                    <label for="" class="remember">
+                    <label for="Password" class="label">Contraseña</label>
+                    <input type="password" name="Password" id="Password" class="input" placeholder="" required>
+                    
+                    <button type="submit" class="input btnIngresar">Ingresar</button>
+                </div>
+                
+                <div class="finalCard">
+                    <label for="checkbox" class="remember" class="label">
                         <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
-                        <span>Recordar usuario</span>   
+                        <span class="span">Recordar usuario</span>   
                     </label>
-                    <span class="span">¿Olvidaste tu contraseña?</span>
-                </article>
+                    <a href="#" class="olvidar">¿Olvidaste tu contraseña?</a>
+                </div>
             </form>
         </section>
 
-        
-    </main>
-    <footer class="footer"> 
-        <section class="footer-regulatorios">
-            <!--<img src="/img/logoFinsolBlanco.png" alt="Logo de Finsol" class="imgLogo"> -->
-            <figure class="figure">
-                <figcaption class="figCaption">
-                    Institución Regulada Por:
-                </figcaption>
-                <img src="/img/logo-cnbs.png" alt="Logo de la Comisión Nacional de Bancos y Seguros (CNBS)" class="img-regulatorios">
-            </figure>
-            <figure class="figure">
-                <figcaption class="figCaption">
-                    Fondos Protegidos Por:
-                </figcaption>
-                <img src="/img/logo-fosede.png" alt="Logo del Fondo de Seguro de Depósitos (FOSEDE)" class="img-regulatorios">
-            </figure>
+        <!-- Sección del logo -->
+        <section class="logo-container">
+            <div class="logo">
+                <img src="./img/finsol.png.png" class="img" alt="Logo de Finsol">
+            </div>
         </section>
-            <section class="footerLocation">
-                <article class="location">
-                    <h4>Encuentranos:</h4>
-                    <p> San Pedro Sula, Cortés
-                    Bo. El Centro, 5 Ave., 1-2 Calle, N.O.<p>
-                    </p>  
-                </article>  
-                <section class="footerSocialMediaContainer">
-                    <p class="footerSocialText">Redes sociales</p>
-                        <nav class="enlacesRedes">
-                            <a href="https://www.facebook.com/finsolhn" class="redes">
-                                <img src="/img/Recursos/facebookBlanco.png" alt="" title="logoFacebook">
-                            </a>
-                            <a href="https://www.instagram.com/finsolhonduras/" class="redes">
-                                <img src="/img/Recursos/instagramBlanco.png" alt="" title="logoInstagram">
-                            </a>
-                            <a href="https://www.youtube.com/user/finsolhonduras" class="redes">
-                                <img src="/img/Recursos/youtubeBlanco.png" alt="" title="logoYoutube">
-                            </a>
-                        </nav>
-                </section> 
-            </section>
-    </footer>
-    
+    </main>
 </body>
 </html>

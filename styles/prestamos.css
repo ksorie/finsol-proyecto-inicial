@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items:start;
+    box-sizing: border-box;
+
+}
+.main-content h2{
+    color: var(--colorSeptimo);
+}
+.form {
+    width: 100%; /* Abarca todo el ancho disponible */
+    max-width: 900px; /* Define un límite de ancho máximo */
+    background: var(--colorFondo); /* Opcional: fondo específico para el formulario */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+.form .form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--colorSeptimo);
+}
+
+.label{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--colorSeptimo);
+}
+
+.input{
+    max-width: 100%;
+    height: 44px;
+    background-color: var(--colorCuaternario);
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    color: var(--colorSeptimo);
+
+}
+
+.textarea {
+    color: var(--colorSeptimo);
+    background: var(--colorOctavo);
+    outline: none;
+    border: none;
+    resize: none; /* Permite redimensionar solo verticalmente, si lo deseas */
+    height: 200px; /* Define una altura máxima (opcional) */
+}
+
+
+.note{
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin-top: 10px;
+}
+
+.note img{
+
+    width: 13px;
+    height: 13px;
+}
+.buttons {
+    display: flex;
+    justify-content: flex-end; /* Espaciar los botones horizontalmente */
+    margin-top: 15px;
+    gap: 12px;
+}
+.btn{   
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-align: center;
+    
+}
+
+.btn-submit{
+    color: var(--colorSecundario);
+    background-color:var(--colorQuinto);
+}
