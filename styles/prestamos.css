@@ -90,3 +90,12 @@
     color: var(--colorSecundario);
     background-color:var(--colorQuinto);
 }
+
+.btn-submit:hover{
+ background-color: #ff0015;
+}
+
+.btn-cancel:hover{
+    color:var(--colorQuinto);
+    border-color: var(--colorQuinto);
+}

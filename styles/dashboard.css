@@ -13,20 +13,27 @@
 
 /* Sidebar */
 .sidebar {
-    width: 250px; /* Ancho del sidebar */
+    width: 280px; /* Ancho del sidebar */
     background-color: var(--colorOctavo); /* Fondo del menú lateral */
     color: var(--colorSeptimo);
     padding: 20px;
     height: 100vh; /* Que ocupe toda la altura de la ventana */
     display: flex;
     flex-direction: column;
+    white-space: nowrap; /*No se divide el texto*/
 }
+
+
 
 .nav ul {
     list-style-type: none;
     padding: 0;
+    
 }
 
+.nav li:hover{
+    background-color: #E7F6FF;
+}
 .nav-item {
     display: flex;
     align-items: center;
@@ -38,6 +45,7 @@
     margin-right: 10px; /* Espacio entre el icono y el texto */
     width: 23px;
     height: 23px;
+    flex-shrink: 0;
 }
 
 /* Contenido principal */
