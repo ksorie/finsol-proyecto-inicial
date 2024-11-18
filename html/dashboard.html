@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solicitud de Préstamos</title>
+    <title>Dashboard</title>
     <link rel="icon" href="/img/finsol.png.png">
     <link rel="stylesheet" href="/styles/dashboard.css">
     <link rel="stylesheet" href="/styles/general.css">
@@ -63,8 +63,49 @@
         </div>
                 <!-- Main Content -->
                 <main class="main-content">
-                   
+                    <h2 class="title">Dashboard</h2>                  
+                    <!-- Sección de Préstamos -->
+                    <section class="section-loan " aria-labelledby="loan-title">
+                        <div class="section-loan-text">
+                            <h3 id="loan-title" class="items-title">Préstamos</h3>
+                            <p>Solicita préstamos desde LPS 10,000.00</p>    
+                        </div>
+                        <button class="btn-prestamo">Solicita Préstamo</button>
+                    </section>
+                    <!-- Sección de Seguros-->
+                    <section class="section-insurance items-title" aria-labelledby="loan-title">
+                        <div class="section-insurance-text">
+                            <h3 id="insurance-title" class="items-title">Seguros</h3>
+                            <p>Solicita seguros de vida</p>    
+                        </div>
+                        <button class="btn-prestamo">Solicita seguros</button>
+                    </section>
+                    <!-- Sección de Notificaciones recientes-->
+                    <section class="section-noti items-title" aria-labelledby="noti-title">
+                        <div class="section-noti-text">
+                            <h3 id="noti-title" class="items-title">Notificaciones Recientes</h3>
+                            <div class="items-art">
+                                <article>
+                                    <h5 class="items-art-h fecha">Fecha</h5>
+                                    <p>10/03/2024</p>
+                                    <p>08/03/2024</p>
+                                </article>
+                                <article>
+                                    <h5 class="items-art-h tipo">Tipo</h5>
+                                    <p>Solicitud de préstamo</p>
+                                    <p>Seguro de vida de cobertura</p>
+                                </article>
+                                <article>
+                                    <h5 class="items-art-h estado">Estado</h5>
+                                    <p>En revisión</p>
+                                    <p>Activo</p>
+                                </article>
+                            </div>
+                        </div>
+                        
+                    </section>
                 </main>
+                
 
     
 
