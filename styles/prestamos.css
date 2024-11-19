@@ -34,6 +34,7 @@
     font-size: 16px;
     font-weight: 700;
     color: var(--colorSeptimo);
+    margin-top: 6px;
 }
 
 .input{
@@ -77,6 +78,7 @@
     justify-content: flex-end; /* Espaciar los botones horizontalmente */
     margin-top: 15px;
     gap: 12px;
+    
 }
 .btn{   
     padding: 10px 15px;
@@ -92,7 +94,7 @@
 }
 
 .btn-submit:hover{
- background-color: #ff0015;
+background-color: #ff0015;
 }
 
 .btn-cancel:hover{

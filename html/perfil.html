@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/styles/dashboard.css">
     <link rel="stylesheet" href="/styles/general.css">
     <link rel="stylesheet" href="/styles/prestamos.css">
+    <link rel="stylesheet" href="/styles/perfil.css">
     
 </head>
 <body>
@@ -63,10 +64,38 @@
         </div>
                 <!-- Main Content -->
                 <main class="main-content">
-                    
+                <section>
+                    <h2>Perfil</h2>
+                        <form id="profileForm" class="profileForm">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="name" value="Luis Enrique Bartel Lopez" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" value="enrique17bartel@gmail.com" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Celular</label>
+                                <input type="text" id="phone" name="phone" value="0000-0000" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Dirección</label>
+                                <input type="text" id="address" name="address" value="Choloma" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="status">Estado de la cuenta</label>
+                                <select id="status" name="status" disabled>
+                                    <option value="Activo" selected>Activo</option>
+                                    <option value="Inactivo">Inactivo</option>
+                                </select>
+                            </div>
+                            <div class="section-btn">
+                                <button type="button" class="btn btn-edit" id="editButton">Editar</button>
+                                <button type="submit" class="btn btn-save" id="saveButton" disabled>Guardar</button>
+                            </div>                            
+                        </form>                       
+                </section>                    
                 </main>
-
-    
-
 </body>
 </html>

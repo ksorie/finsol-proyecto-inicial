@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    margin-bottom: 30px;
+}
+
+
+.profileForm{
+    width: 100%; /* Abarca todo el ancho disponible */
+    max-width: 800px; /* Define un límite de ancho máximo */
+    background: var(--colorFondo); /* Opcional: fondo específico para el formulario */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+    padding: 25px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+.form-group {    
+    margin-bottom: 10px;
+}
+
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--colorSeptimo);
+}
+input, textarea, select {
+    width: 100%;
+    min-width: 700px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.section-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+}
+.btn {
+    padding: 10px 20px;
+    margin: 5px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-edit {
+    background-color: #f0f0f0;
+    color: #000;
+    border: 1px solid;
+}
+.btn-save {
+    background-color:var(--colorQuinto);
+    color: #fff;
+}
+.btn-save:hover{
+    background-color: #ff0909;
+}
+.btn-edit:hover{
+    color:var(--colorPrimario);
+}

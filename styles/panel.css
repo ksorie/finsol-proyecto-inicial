@@ -1,0 +1,68 @@
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items:start;
+    box-sizing: border-box;
+
+}
+.items-title{
+    color: var(--colorSeptimo);
+}
+
+.border-section{
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%; 
+    max-width: 800px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+}
+
+.section-loan, .section-insurance{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between; 
+}
+
+.main-content .btn{
+    background-color: var(--colorQuinto);
+    color: var(--colorSecundario);
+    border: none;
+}
+
+.section-noti{
+    gap: 60px;
+    padding: 20px;
+    width: 100%; 
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+}
+
+.items-art{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    margin-top: 10px;
+}
+
+.items-art p{
+    font-size: 0.9rem;
+    margin-top: 7px;
+}
+
+.items-revision{
+    background-color: #FDFEB5;
+    border-radius: 10px;
+    padding: 1px;
+}
+
+.items-activo{
+    background-color: #B5FEC9;
+    border-radius: 10px;
+    padding: 1px;
+}
+
+.btn:hover{
+    background-color: #ff0909;
+}

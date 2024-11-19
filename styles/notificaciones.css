@@ -1,0 +1,92 @@
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 25px;
+    color: var(--colorSeptimo);
+    box-sizing: border-box;
+}
+
+.pago, .oferta, .seguro{
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    padding: 20px;   
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+}
+
+
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.id-prestamo, .id-oferta{
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.items-status{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 6px;
+    font-size: 13px;
+}
+
+.vencimiento-prestamo, .monto-prestamo, .monto-oferta{
+    border: none;
+    font-size: 13px;
+}
+.id-oferta{
+    background-color: #B5FEC9;
+    border: none;
+    padding: 5px;
+    color: var(--colorSeptimo);
+    max-width: 190px;
+}
+
+.id-prestamo{
+    background-color: #EEEEEE;
+    color: var(--colorSeptimo);
+    border: none;
+    width: 130px;
+    height: 20px;
+    padding: 5px;
+}
+
+.items-label{
+    font-weight: 500;
+}
+.ofert-status{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+}
+.container-oferta{
+    font-size: 13px;
+}
+.seguro p{
+    background-color: #B5FEC9;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.main-container img{
+    width: 18px;
+    height: 18px;
+}
+
+.main-container span{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+

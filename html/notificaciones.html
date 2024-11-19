@@ -6,13 +6,13 @@
     <title>Notificaciones</title>
     <link rel="stylesheet" href="/styles/dashboard.css">
     <link rel="stylesheet" href="/styles/general.css">
-    <link rel="stylesheet" href="/styles/panel.css">
+    <link rel="stylesheet" href="/styles/notificaciones.css">
 </head>
 <body>
         <section class="container">
             <div class="layout">
                 <!-- Sidebar -->
-                <div class="sidebar">
+                <header class="sidebar">
                     <div class="logo"></div>
                     <nav class="nav" aria-label="Navegación principal">
                         <ul>
@@ -59,12 +59,59 @@
                                 </a>
                             </li>
                         </ul>
-                    </nav>
-                    
-                </div>
-                
+                    </nav>                  
+                </header>     
         </section>
-    
+    <main class="main-container">
+        <h2>Notificaciones</h2>
+        <section class="pago">
+            <article class="container-pago">
+                <span>
+                    <img src="/img/Recursos/IconsFigma/icons8-error-48.png" alt="icono de precaución" class="img-icon">
+                    Próximo pago
+                </span>
+                    <label class="items-label">Préstamo</label>
+                    <input  type="text" name="id-prestamo" id="id-prestammo" class="id-prestamo items-text" value="#0000">
+                    <div class="items-status">
+                        <label for="" class="items-label">Vence:</label>
+                        <input type="text" name="vencimiento-prestamo" id="vencimiento-prestamo" class="vencimiento-prestamo items-text" value="15/11/2026">
+                    </div>   
+                    <div class="items-status">
+                        <label for="" class="items-label">Monto:</label>
+                        <input type="text" name="monto-prestamo" id="monto-prestamo" class="monto-prestamo items-text" value="3,540.00">              
+                    </div>
+                    
+                
+                </article>             
+        </section>
+        <section class="oferta">
+            <article class="container-oferta">
+                <span>
+                    <img src="/img/Recursos/IconsFigma/icons8-dinero-48.png" alt="icono de oferta" class="img-icon">
+                    Oferta disponible
+                </span>
+                    <input  type="text" name="id-oferta" id="id-oferta" class="id-oferta items-text" value="Préstamo pre-aprobado">
+                    <div>
+                        <label for="" class="items-label">Monto:</label>
+                        <input type="text" name="monto-oferta" id="monto-oferta" class="monto-oferta items-text" value="50,000.00">
+                    </div>
+                    
+                            
+            </article>
+        </section>
+        <section class="seguro">
+            <article class="container-seguro">
+                <span>
+                    <img src="/img/Recursos/IconsFigma/icons8-seguro-48.png" alt="icono de oferta" class="img-icon">
+                    Seguro de vida Básico
+                </span>
+                <div class="ofert-status">
+                    <h4>Estado:</h4>
+                    <p>Activo</p> 
+                </div>                 
+            </article>
+        </section>
+    </main>
 
 </body>
 </html>
