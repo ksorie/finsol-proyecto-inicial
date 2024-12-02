@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/styles/prestamos.css">
     <link rel="stylesheet" href="/styles/panel.css">
     
+    
 </head>
 <body>
         <div class="container">
@@ -51,7 +52,7 @@
                                 Pagos
                                 </a>
                             </li>
-                            <li><a href="#" class="nav-item">
+                            <li><a href="#" onclick="cerrarSesion()" class="nav-item">
                                 <img class="icon-class-logout" src="/img/Recursos/IconsFigma/icons8-cerrar-sesión-48.png">
                                 Cerrar Sesión
                                 </a>
@@ -62,6 +63,11 @@
                 </header>
             </div>
         </div>
+        <!-- Mensaje de carga y spinner -->
+        <div id="loading" class="loading-message" style="display: none;">
+        <div class="spinner"></div>
+        Cerrando sesión...
+        </div>
                 <!-- Main Content -->
                 <main class="main-content">
                     <h2 class="title">Dashboard</h2>                  
@@ -71,7 +77,7 @@
                             <h3 id="loan-title" class="items-title">Préstamos</h3>
                             <p>Solicita préstamos desde LPS 10,000.00</p>    
                         </div>
-                        <button class="btn-prestamo btn">Solicita Préstamo</button>
+                        <button class="btn-prestamo btn" id="btn-prestamo">Solicita Préstamo</button>
                     </section>
                     <!-- Sección de Seguros-->
                     <section class="section-insurance items-title border-section" aria-labelledby="loan-title">
@@ -79,7 +85,7 @@
                             <h3 id="insurance-title" class="items-title">Seguros</h3>
                             <p>Solicita seguros de vida</p>    
                         </div>
-                        <button class="btn-prestamo btn">Solicita seguros</button>
+                        <button class="btn-seguro btn" id="btn-seguro">Solicita seguros</button>
                     </section>
                     <!-- Sección de Notificaciones recientes-->
                     <section class="section-noti items-title" aria-labelledby="noti-title">
@@ -107,7 +113,8 @@
                     </section>
                 </main>
                 
-
+    <script src="/script/dashboard.js"></script>
+    <script src="/script/cerrarSesion.js"></script>
     
 
 </body>

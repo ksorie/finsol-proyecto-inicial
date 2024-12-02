@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="/styles/dashboard.css">
     <link rel="stylesheet" href="/styles/general.css">
     <link rel="stylesheet" href="/styles/notificaciones.css">
+    
 </head>
 <body>
-        <section class="container">
+    <section class="container">
             <div class="layout">
                 <!-- Sidebar -->
                 <header class="sidebar">
@@ -31,7 +32,7 @@
                             <li>
                                 <a href="/html/perfil.html" class="nav-item">
                                     <img class="icon-class-profile" src="/img/Recursos/IconsFigma/icons8-cliente-30.png"></img> 
-                                    Solicitud de Seguros
+                                    Perfil
                                 </a>
                             </li>
                             <li>
@@ -53,7 +54,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="nav-item">
+                                <a href="#" onclick="cerrarSesion()" class="nav-item">
                                     <img class="icon-class-logout" src="/img/Recursos/IconsFigma/icons8-cerrar-sesión-48.png"></img> 
                                     Cerrar Sesión
                                 </a>
@@ -61,7 +62,14 @@
                         </ul>
                     </nav>                  
                 </header>     
-        </section>
+    </section>
+
+        <!-- Mensaje de carga y spinner -->
+        <div id="loading" class="loading-message" style="display: none;">
+            <div class="spinner"></div>
+            Cerrando sesión...
+        </div>
+
     <main class="main-container">
         <h2>Notificaciones</h2>
         <section class="pago">
@@ -113,5 +121,6 @@
         </section>
     </main>
 
+    <script src="/script/cerrarSesion.js"></script>
 </body>
 </html>

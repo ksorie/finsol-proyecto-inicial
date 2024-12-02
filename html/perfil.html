@@ -51,7 +51,7 @@
                                 Pagos
                                 </a>
                             </li>
-                            <li><a href="#" class="nav-item">
+                            <li><a href="#" onclick="cerrarSesion()" class="nav-item">
                                 <img class="icon-class-logout" src="/img/Recursos/IconsFigma/icons8-cerrar-sesión-48.png">
                                 Cerrar Sesión
                                 </a>
@@ -62,8 +62,15 @@
                 </header>
             </div>
         </div>
-                <!-- Main Content -->
-                <main class="main-content">
+
+        <!-- Mensaje de carga y spinner -->
+        <div id="loading" class="loading-message" style="display: none;">
+            <div class="spinner"></div>
+            Cerrando sesión...
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
                 <section>
                     <h2>Perfil</h2>
                         <form id="profileForm" class="profileForm">
@@ -96,6 +103,8 @@
                             </div>                            
                         </form>                       
                 </section>                    
-                </main>
+        </main>
+
+        <script src="/script/cerrarSesion.js"></script>
 </body>
 </html>

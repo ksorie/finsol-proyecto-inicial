@@ -39,3 +39,41 @@ main{
     box-sizing: border-box;
     margin: 0;
 }
+
+/*Cerrar Sesion*/
+/* Estilo para el mensaje de carga */
+.loading-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);  
+    color: var(--colorPrimario);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;  /* Asegura de que esté encima de todo */
+    gap: 10px;
+}
+
+
+/* Estilo del spinner */
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid var(--colorPrimario);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+/* Animación del spinner */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

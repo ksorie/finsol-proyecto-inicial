@@ -1,0 +1,68 @@
+*{
+    color: var(--colorSeptimo);
+}
+.insurance article{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.insurance ul {
+    list-style-type: none;
+    font-size: 14px;
+
+}
+
+.insurance li{
+    display: flex;
+    align-items: center;
+}
+.insurance h5{
+margin-top: 12px;   
+}
+
+.insurance p{
+    font-size: 14px;
+}
+
+
+.insurance img{
+    max-width: 20px;
+    height:19px;
+}
+
+.insurance .insurance-p{
+    margin-top: 14px;
+}
+.insurance-all, .insurance{
+    width: 100%; /* ancho disponible */
+    max-width: 900px; 
+    height: auto;
+    background: var(--colorFondo); 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra  */
+    
+}
+
+.insurance{
+    cursor: pointer;
+}
+
+.insurance-all{
+    overflow-x: auto; /* Agrega scroll vertical */
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    gap: 15px;
+
+}
+
+.insurance:hover{
+    border-color: var(--colorPrimario);
+}
+
+.buttons{
+    cursor: pointer;
+}
+

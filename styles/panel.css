@@ -28,6 +28,7 @@
     background-color: var(--colorQuinto);
     color: var(--colorSecundario);
     border: none;
+    cursor: pointer;
 }
 
 .section-noti{

@@ -50,7 +50,7 @@
                                 Pagos
                                 </a>
                             </li>
-                            <li><a href="#" class="nav-item">
+                            <li><a href="#" onclick="cerrarSesion()" class="nav-item">
                                 <img class="icon-class-logout" src="/img/Recursos/IconsFigma/icons8-cerrar-sesión-48.png">
                                 Cerrar Sesión
                                 </a>
@@ -61,8 +61,14 @@
                 </header>
             </div>
         </div>
+
+        <!-- Mensaje de carga y spinner -->
+        <div id="loading" class="loading-message" style="display: none;">
+            <div class="spinner"></div>
+            Cerrando sesión...
+        </div>
                 <!-- Main Content -->
-                <main class="main-content">
+        <main class="main-content">
                     <h2 class="title">Nueva Solicitud de Préstamo</h2>
                     <form class="form">
                         <div class="form-group">
@@ -96,9 +102,7 @@
                             <button type="submit" class="btn btn-submit">Enviar Solicitud</button>
                         </div>
                     </form>
-                </main>
-
-    
-
+        </main>
+        <script src="/script/cerrarSesion.js"></script>
 </body>
 </html>
