@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --colorPrimario: #0367A6;
+    --colorSecundario: #ffffff;
+    --colorTerciario: #363535;
+    --colorCuaternario: #05060f0a;
+    --colorQuinto: #D90416;
+    --colorSexto: #1b4176;
+    --colorSeptimo:#555555;
+    --colorOctavo: #F2F2F2;
+
+    /*Letras*/
+    --letraPrimaria:"Montserrat";
+}
+body {
+    font-family:var(--letraPrimaria);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--colorOctavo);
+    color: var(--colorSeptimo);
+}
+header {
+    color: var(--colorOctavo);
+    padding:10px;
+    text-align: center;
+}
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+h1, h2 {
+    color: var(--colorPrimario);
+}
+.btn-container {
+    margin-top: 20px;
+    text-align: center;
+}
+.btn {
+    padding: 10px 20px;
+    background-color: var(--colorPrimario);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn:hover {
+    background-color: var(--colorSexto);
+}

@@ -17,6 +17,7 @@
 .form {
     width: 100%; /* Abarca todo el ancho disponible */
     max-width: 900px; /* Define un límite de ancho máximo */
+    overflow-x: auto;
     background: var(--colorFondo); /* Opcional: fondo específico para el formulario */
     border-radius: 10px; /* Opcional: bordes redondeados */
     padding: 20px; /* Espaciado interno */
@@ -26,7 +27,7 @@
 .form .form-group{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     color: var(--colorSeptimo);
 }
 
@@ -34,7 +35,7 @@
     font-size: 16px;
     font-weight: 700;
     color: var(--colorSeptimo);
-    margin-top: 6px;
+    margin-top: 15px;
 }
 
 .input{
@@ -49,7 +50,7 @@
 
 }
 
-.textarea {
+.textarea{
     color: var(--colorSeptimo);
     background: var(--colorOctavo);
     outline: none;
@@ -73,6 +74,52 @@
     width: 13px;
     height: 13px;
 }
+
+.rates-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Espaciado entre filas */
+    text-align: left;
+}
+
+.rates-table thead th {
+    font-size: 0.9rem;
+    background-color: #f4f4f4;
+    color: var(--colorSeptimo);
+    font-weight: 600;
+    padding: 10px 15px;
+    border-bottom: 2px solid #ddd;
+}
+
+.rates-table tbody tr td {
+    font-size: 0.9rem;
+    background-color:var(--colorSecundario);
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+}
+
+.rates-table tbody tr td:first-child {
+    border-right: 2px solid #ddd; /* Línea que separa columnas */
+}
+
+.rates-table tbody tr:hover td {
+    background-color: #f9f9f9;}
+
+
+.terms-link{
+    color: var(--colorPrimario);
+    cursor: pointer; 
+    text-decoration: underline; 
+    font-size: 1rem;
+}
+
+.options{
+    display: flex;
+    gap: 6px;
+    margin-top: 10px;
+    color: var(--colorSeptimo) ;
+}
+
 .buttons {
     display: flex;
     justify-content: flex-end; /* Espaciar los botones horizontalmente */

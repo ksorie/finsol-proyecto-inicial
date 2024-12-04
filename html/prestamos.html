@@ -71,11 +71,21 @@
         <main class="main-content">
                     <h2 class="title">Nueva Solicitud de Préstamo</h2>
                     <form class="form">
+                        <div>
+                            <legend class="label">¿Trabaja actualmente?</legend>
+                            <div class="options">
+                                <input type="radio" name="option" id="optionSi">
+                                <label for="optionSi">Sí</label>
+                                <input type="radio" name="option" id="optionNo">
+                                <label for="optionNo">No</label>
+                            </div>
+                        </div>
+                    
                         <div class="form-group">
                             <label class="label">Monto solicitado</label>
                             <input type="number" class="input" placeholder="L 0.00">
                         </div>
-    
+                    
                         <div class="form-group">
                             <label class="label">Tipo de préstamo</label>
                             <select class="select input">
@@ -84,25 +94,77 @@
                                 <option value="business">Préstamo Empresarial</option>
                                 <option value="mortgage">Préstamo Hipotecario</option>
                                 <option value="student">Préstamo Estudiantil</option>
-                                <option value="cars">Préstamo Automótriz</option>
+                                <option value="cars">Préstamo Automotriz</option>
                             </select>
                         </div>
-    
+                    
                         <div class="form-group">
-                            <label class="label ">Propósito del Préstamo</label>
+                            <label class="label">Propósito del Préstamo</label>
                             <textarea class="textarea input"></textarea>
                         </div>
-                            <span class="note">
-                                <img src="/img/Recursos/IconsFigma/icons8-seguro-48.png" alt="icon de seguro">
-                                Incluye Seguro de Vida obligatorio por Cobertura de Deuda   
+                    
+                        <span class="note">
+                            <img src="/img/Recursos/IconsFigma/icons8-seguro-48.png" alt="icon de seguro">
+                            Incluye Seguro de Vida obligatorio por Cobertura de Deuda
+                        </span>
+
+                        <!-- Información sobre tasas de interés -->
+                    <div class="form-group table">
+                        <label class="label">Tasas de Interés</label>
+                        <table class="rates-table">
+                            <thead>
+                                <tr>
+                                    <th>Tipo de Préstamo</th>
+                                    <th>Tasa Anual (%)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Préstamo Personal</td>
+                                    <td>12% - 15%</td>
+                                </tr>
+                                <tr>
+                                    <td>Préstamo Empresarial</td>
+                                    <td>10% - 13%</td>
+                                </tr>
+                                <tr>
+                                    <td>Préstamo Hipotecario</td>
+                                    <td>8% - 10%</td>
+                                </tr>
+                                <tr>
+                                    <td>Préstamo Estudiantil</td>
+                                    <td>6% - 8%</td>
+                                </tr>
+                                <tr>
+                                    <td>Préstamo Automotriz</td>
+                                    <td>9% - 11%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                        <!-- Botón para mostrar términos y condiciones -->
+                        <div class="form-group terminos">
+                            <span id="open-modal" class="terms-link" >
+                                Leer y aceptar los Términos y Condiciones
                             </span>
+                            <div>
+                                <input type="checkbox" id="accept-terms" style="margin-left: 10px;">
+                                <label for="accept-terms" >He leído y acepto</label>
+                            </div>
+                            
+                        </div>
 
                         <div class="buttons">
                             <button type="button" class="btn btn-cancel">Cancelar</button>
-                            <button type="submit" class="btn btn-submit">Enviar Solicitud</button>
+                            <button type="submit" class="btn btn-submit" id="submit-button" disabled>Enviar Solicitud</button>
                         </div>
                     </form>
+                    
+                    
         </main>
         <script src="/script/cerrarSesion.js"></script>
+        <script src="/script/terminosYCondiciones.js"></script>
+        
 </body>
 </html>
