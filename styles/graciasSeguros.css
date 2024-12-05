@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --colorPrimario: #0367A6;
+    --colorSecundario: #ffffff;
+    --colorTerciario: #363535;
+    --colorCuaternario: #05060f0a;
+    --colorQuinto: #D90416;
+    --colorSexto: #1b4176;
+    --colorSeptimo:#555555;
+    --colorOctavo: #F2F2F2;
+
+    /*Letras*/
+    --letraPrimaria:"Montserrat";
+}
+main {
+    max-width: 800px;
+    height:400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family:var(--letraPrimaria);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--colorOctavo);
+    color: var(--colorSeptimo);
+}
+.graciasSeguros img{
+    max-width: 200px;
+    height: 150px;
+}
+
+.graciasSeguros, .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-dashboard {
+    color: var(--colorSecundario);
+    background-color:var(--colorQuinto);
+    margin-top: 15px;
+    gap: 12px;
+    cursor:pointer;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.btn-dashboard:hover{
+    background-color: #ff0015;
+    border: 1px solid var(--colorSeptimo);
+    }

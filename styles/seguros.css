@@ -47,6 +47,8 @@ margin-top: 12px;
 
 .insurance{
     cursor: pointer;
+    border: 1px solid ;
+    border-color: transparent;
 }
 
 .insurance-all{

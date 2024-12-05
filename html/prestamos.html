@@ -71,7 +71,25 @@
         <main class="main-content">
                     <h2 class="title">Nueva Solicitud de Préstamo</h2>
                     <form class="form">
+                        <h3>Información personal</h3>
+                        <div class="form-group">
+                            <label class="label">Nombre Completo</label>
+                            <input type="text" class="input" placeholder="Escriba su nombre">
+                        </div>
+                        <div class="form-group">
+                            <label class="label">Número Celular</label>
+                            <input type="number" class="input" placeholder="0000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label class="label">Correo electrónico</label>
+                            <input type="email" class="input" placeholder="ejemplo@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="label">Ciudad</label>
+                            <input type="text" class="input" placeholder="">
+                        </div>
                         <div>
+                            <h3>Información de la solicitud</h3>
                             <legend class="label">¿Trabaja actualmente?</legend>
                             <div class="options">
                                 <input type="radio" name="option" id="optionSi">
@@ -142,7 +160,12 @@
                             </tbody>
                         </table>
                     </div>
-                    
+                        <div class="observaciones">
+                            <article>
+                                <h5>Observaciones</h5>
+                                <p>Condiciones y aprobación sujeto a validación de Comité de créditos.</p>
+                            </article>
+                        </div>
                         <!-- Botón para mostrar términos y condiciones -->
                         <div class="form-group terminos">
                             <span id="open-modal" class="terms-link" >
