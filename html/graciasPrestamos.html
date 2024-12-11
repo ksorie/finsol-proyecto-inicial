@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/graciasSeguros.css">
+    <title>Gracias</title>
+</head>
+<body>
+    <main>
+        <section class="graciasSeguros">
+            <img src="/img/finsol.png.png" alt="Logo de Finsol">
+            <div class="container">
+                <h2>¡Gracias por enviar tu solicitud!</h2>
+                <p id="thank-you-message">Tu solicitud ha sido recibida correctamente. Pronto nos pondremos en contacto contigo.</p> <!-- Mensaje dinámico -->
+                <button class="btn-dashboard" id="btn-dashboard" onclick="window.location.href = '/html/dashboard.html';">Regresar a Inicio</button>
+            </div>
+        </section>
+    </main>
+    <script src="/script/form-handler.js">
+        // Obtener los datos de la solicitud desde Local Storage (si fue almacenado)
+        const datos = JSON.parse(localStorage.getItem('solicitudDatos'));
+        if (datos) {
+            document.getElementById('outputDatos').innerText = 
+                `Nombre: ${datos.nombre}, Teléfono: ${datos.telefono}, Email: ${datos.email}, Ciudad: ${datos.ciudad}, Monto: ${datos.monto}, Tipo de Préstamo: ${datos.tipoPrestamo}`;
+        }
+    </script>
+</body>
+</html>

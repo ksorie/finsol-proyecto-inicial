@@ -69,23 +69,23 @@
                 <!-- Main Content -->
         <main class="main-content">
                     <h2 class="title">Nueva Solicitud de Préstamo</h2>
-                    <form class="form">
+                    <form class="form" id="solicitudForm">
                         <h3>Información personal</h3>
                         <div class="form-group">
                             <label class="label">Nombre Completo</label>
-                            <input type="text" class="input" placeholder="Escriba su nombre">
+                            <input type="text" class="input" id="nombre" placeholder="Escriba su nombre">
                         </div>
                         <div class="form-group">
                             <label class="label">Número Celular</label>
-                            <input type="number" class="input" placeholder="0000-0000">
+                            <input type="number" class="input" id="telefono" placeholder="0000-0000">
                         </div>
                         <div class="form-group">
                             <label class="label">Correo electrónico</label>
-                            <input type="email" class="input" placeholder="ejemplo@gmail.com">
+                            <input type="email" class="input" id="email" placeholder="ejemplo@gmail.com">
                         </div>
                         <div class="form-group">
                             <label class="label">Ciudad</label>
-                            <input type="text" class="input" placeholder="">
+                            <input type="text" class="input" id="ciudad" placeholder="">
                         </div>
                         <div>
                             <h3>Información de la solicitud</h3>
@@ -100,7 +100,7 @@
                     
                         <div class="form-group">
                             <label class="label">Monto solicitado</label>
-                            <input type="number" class="input" placeholder="L 0.00">
+                            <input type="number" class="input" id="monto" placeholder="L 0.00">
                         </div>
                     
                         <div class="form-group">
@@ -179,7 +179,7 @@
 
                         <div class="buttons">
                             <button type="button" class="btn btn-cancel">Cancelar</button>
-                            <button type="submit" class="btn btn-submit" id="submit-button" disabled>Enviar Solicitud</button>
+                            <button type="submit" class="btn btn-submit" id="submit-button">Enviar Solicitud</button>
                         </div>
                     </form>
                     
@@ -187,6 +187,7 @@
         </main>
         <script src="/script/cerrarSesion.js"></script>
         <script src="/script/terminosYCondiciones.js"></script>
+        <script src="/script/form-handler.js"></script>
         
 </body>
 </html>
